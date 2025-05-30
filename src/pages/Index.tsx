@@ -61,7 +61,7 @@ const Index = () => {
             <div className="text-center lg:text-left animate-fade-in">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
                 <span className="bg-gradient-to-r from-brand-purple to-brand-blue bg-clip-text text-transparent">
-                  Mohamed Rasith
+                  Empowering Brands
                 </span>
                 <br />
                 Through Smart Social Media Management
