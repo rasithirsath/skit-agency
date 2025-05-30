@@ -37,12 +37,10 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-brand-purple to-brand-blue rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">SF</span>
+            <div className="w-14 h-15  ">
+             <img src="https://i.ibb.co/0ptYYkCv/logo.jpg" alt="logo" />
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-brand-purple to-brand-blue bg-clip-text text-transparent">
-              SocialFlow
-            </span>
+           
           </Link>
 
           {/* Desktop Navigation */}

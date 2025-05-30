@@ -57,34 +57,29 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="animate-slide-in-left">
               <img
-                src="https://images.unsplash.com/photo-1494790108755-2616b332c6c9?w=500&h=600&fit=crop&crop=face"
+                src="https://i.ibb.co/MD4gWhq4/fiunder.jpg"
                 alt="Sarah Mitchell - Founder & CEO"
                 className="w-full max-w-md mx-auto rounded-3xl shadow-2xl hover:shadow-3xl transition-shadow duration-300 transform hover:scale-105"
               />
             </div>
             
             <div className="animate-slide-in-right">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900">Sarah Mitchell</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900">Saud Ismail</h3>
               <p className="text-xl text-brand-purple font-semibold mb-6">Founder & CEO</p>
               
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  With over a decade of experience in digital marketing and brand strategy, 
-                  Sarah founded SocialFlow with a vision to revolutionize how businesses 
-                  approach social media management.
+                 Saud Ismail, founder of Skit Agency, is a B.Com (Honours) graduate who, by the age of 19, had already created and managed 5–10 successful Meta ad campaigns. This early hands-on experience gave him a strong foundation in driving real results through social media marketing.
+
                 </p>
                 
                 <p>
-                  Her background in psychology and marketing provides unique insights into 
-                  consumer behavior and authentic brand storytelling. Sarah believes that 
-                  successful social media isn't just about numbers—it's about creating 
-                  meaningful connections that drive real business results.
+                  Combining business knowledge with creative strategy, Saud launched Skit Agency to help brands grow authentically and effectively in the digital world. He is passionate about continuing his journey in this field, always learning and evolving to deliver the best for his clients.
+
                 </p>
                 
                 <p>
-                  Under her leadership, SocialFlow has grown from a startup to a trusted 
-                  partner for businesses worldwide, helping them navigate the ever-evolving 
-                  social media landscape with confidence and creativity.
+                  With dedication and a results-driven mindset, Saud Ismail leads Skit Agency to empower businesses to turn their social media presence into a powerful asset.
                 </p>
               </div>
 
@@ -93,7 +88,7 @@ const About = () => {
                   "Every brand has a story worth telling. Our job is to help you tell it 
                   in a way that resonates, engages, and inspires action."
                 </blockquote>
-                <cite className="block mt-3 text-brand-purple font-semibold">- Sarah Mitchell</cite>
+                <cite className="block mt-3 text-brand-purple font-semibold">- Mohamed Saud</cite>
               </div>
             </div>
           </div>
@@ -114,9 +109,8 @@ const About = () => {
               </div>
               
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                To be the world's most trusted partner for social media excellence, 
-                empowering businesses of all sizes to build authentic, engaging, and 
-                profitable relationships with their audiences.
+               To become a globally recognized social media marketing agency that not only drives business growth but also inspires authentic storytelling and meaningful engagement. We envision a future where every brand, big or small, can connect deeply with its audience through creative, innovative, and impactful digital experiences.
+
               </p>
               
               <p className="text-lg text-gray-600 leading-relaxed">
@@ -136,9 +130,7 @@ const About = () => {
               </div>
               
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                To provide comprehensive, data-driven social media management services 
-                that deliver measurable results while maintaining the authentic voice 
-                and values of each brand we serve.
+               At Skit Agency, our mission is to deliver exceptional social media marketing solutions that combine creativity with data-driven insights. We are committed to helping businesses grow by crafting tailored strategies, producing compelling content, and managing dynamic campaigns that foster genuine connections. Through continuous learning and innovation, we strive to elevate our clients’ brands and maximize their digital potential.
               </p>
               
               <p className="text-lg text-gray-600 leading-relaxed">
@@ -194,22 +186,22 @@ const About = () => {
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div className="animate-fade-in">
               <Award size={48} className="mx-auto mb-4 opacity-90" />
-              <div className="text-3xl font-bold mb-2">15+</div>
+              <div className="text-3xl font-bold mb-2">8+</div>
               <p className="opacity-90">Industry Awards</p>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
               <Users size={48} className="mx-auto mb-4 opacity-90" />
-              <div className="text-3xl font-bold mb-2">25</div>
+              <div className="text-3xl font-bold mb-2">10</div>
               <p className="opacity-90">Team Members</p>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <Target size={48} className="mx-auto mb-4 opacity-90" />
-              <div className="text-3xl font-bold mb-2">98%</div>
+              <div className="text-3xl font-bold mb-2">90%</div>
               <p className="opacity-90">Client Retention</p>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
               <Lightbulb size={48} className="mx-auto mb-4 opacity-90" />
-              <div className="text-3xl font-bold mb-2">500+</div>
+              <div className="text-3xl font-bold mb-2">100+</div>
               <p className="opacity-90">Successful Campaigns</p>
             </div>
           </div>

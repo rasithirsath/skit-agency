@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
+import { Instagram, Linkedin, Twitter, Youtube,Facebook } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -10,10 +10,9 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-brand-purple to-brand-blue rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">SF</span>
-              </div>
-              <span className="text-xl font-bold">SocialFlow</span>
+              <div className="w-14 h-15  ">
+             <img src="https://i.ibb.co/0ptYYkCv/logo.jpg" alt="logo" />
+            </div>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
               Empowering brands through smart social media management. We help your business stay active, relevant, and engaging across all platforms.
@@ -46,21 +45,23 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Contact Info</h3>
             <div className="space-y-2 text-gray-300 text-sm">
-              <p>contact@socialflow.com</p>
-              <p>+1 (555) 123-4567</p>
-              <p>123 Business Ave<br />Suite 100<br />New York, NY 10001</p>
+               <a href="mailto:info.skitagency@gmail.com" className="hover:underline">
+      info.skitagency@gmail.com
+    </a>
+              <p>+91 78456 43661</p>
+              <p>Vandalur Chennai, India</p>
             </div>
           </div>
+          
 
           {/* Social Media */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Follow Us</h3>
             <div className="flex space-x-4">
               {[
-                { icon: Instagram, href: '#', label: 'Instagram' },
-                { icon: Linkedin, href: '#', label: 'LinkedIn' },
-                { icon: Twitter, href: '#', label: 'Twitter' },
-                { icon: Youtube, href: '#', label: 'YouTube' },
+                { icon: Instagram, href: 'https://www.instagram.com/skitagency?igsh=N3l4czZ4bTdhOWhj', label:'Instagram' },
+                { icon: Twitter, href: 'https://x.com/Skitagencyco?t=njO5GP8GVMLqLw1bEspAhw&s=08', label: 'Twitter' },
+                { icon: Facebook, href: 'https://www.facebook.com/share/1CRfH65QdS/ ', label: 'Facebook' },
               ].map((social) => (
                 <a
                   key={social.label}
@@ -78,7 +79,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 SocialFlow. All rights reserved. | Empowering brands through smart social media management.
+            © 2024 Skit Agency. All rights reserved. | Empowering brands through smart social media management.
           </p>
         </div>
       </div>

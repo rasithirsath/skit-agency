@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ChevronDown, Shield, BarChart3, Users, Star } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -25,24 +26,24 @@ const Index = () => {
       description: "Data-driven strategies tailored to your brand's unique voice and business objectives."
     }
   ];
-
+   const navigate = useNavigate();
   const reviews = [
     {
-      name: "Sarah Johnson",
-      company: "TechStart Inc.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b332c6c9?w=150&h=150&fit=crop&crop=face",
+      name: "Aadil Sharaf",
+      company: "Muscat Interiors",
+      image: "https://i.ibb.co/gLy0FW1D/feed-1.jpg",
       review: "SocialFlow transformed our social media presence completely. Our engagement increased by 300% in just 3 months!"
     },
     {
-      name: "Michael Chen",
-      company: "GrowthCo",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+      name: "Aseem M",
+      company:"Mupa Restaurants",
+      image:"https://i.ibb.co/gM7kH6Hd/feed-2.jpg",
       review: "Professional, reliable, and results-driven. The team understands our brand voice perfectly and delivers consistently."
     },
     {
-      name: "Emily Rodriguez",
-      company: "Fashion Forward",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+      name: "Shahul Farshid",
+     
+      image: "https://i.ibb.co/zhyT83Bh/feed-34.jpg",
       review: "The strategic approach and attention to detail is outstanding. Our follower growth has been phenomenal!"
     }
   ];
@@ -68,32 +69,21 @@ const Index = () => {
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 We help your brand stay active, relevant, and engaging on all social platforms with data-driven strategies and 24/7 monitoring.
               </p>
+             
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button 
+                onClick={() => navigate('/contact')}
                   size="lg" 
                   className="bg-gradient-to-r from-brand-purple to-brand-blue hover:from-brand-purple/90 hover:to-brand-blue/90 text-white px-8 py-3 rounded-full transform hover:scale-105 transition-all duration-300"
                 >
                   Get Started Today
                 </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg"
-                  className="border-2 border-brand-purple text-brand-purple hover:bg-brand-purple hover:text-white px-8 py-3 rounded-full transition-all duration-300"
-                >
-                  Learn More
-                </Button>
+               
               </div>
             </div>
             
             <div className="relative animate-slide-in-right">
-              <div className="w-full h-96 bg-gradient-to-br from-brand-purple/20 to-brand-blue/20 rounded-3xl flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-32 h-32 bg-gradient-to-r from-brand-purple to-brand-blue rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <BarChart3 size={48} className="text-white" />
-                  </div>
-                  <p className="text-gray-600 font-medium">Social Media Dashboard</p>
-                </div>
-              </div>
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=300&fit=crop" alt="Home -img" />
             </div>
           </div>
         </div>
@@ -135,31 +125,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-brand-purple to-brand-blue text-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div className="animate-fade-in">
-              <div className="text-4xl md:text-5xl font-bold mb-2">
-                <AnimatedCounter end={1000000} suffix="+" />
-              </div>
-              <p className="text-xl opacity-90">Followers Managed</p>
-            </div>
-            <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <div className="text-4xl md:text-5xl font-bold mb-2">
-                <AnimatedCounter end={100} suffix="+" />
-              </div>
-              <p className="text-xl opacity-90">Clients Served</p>
-            </div>
-            <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <div className="text-4xl md:text-5xl font-bold mb-2">
-                <AnimatedCounter end={10} suffix="+" />
-              </div>
-              <p className="text-xl opacity-90">Years of Experience</p>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       {/* Customer Reviews */}
       <section className="py-20 bg-gray-50">

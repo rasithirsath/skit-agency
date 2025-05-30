@@ -145,12 +145,11 @@ const Services = () => {
               Let's discuss how our services can help your brand reach new heights on social media.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-brand-purple to-brand-blue text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+              <a href='/contact' className="bg-gradient-to-r from-brand-purple to-brand-blue text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+              >
                 Get Started Today
-              </button>
-              <button className="border-2 border-brand-purple text-brand-purple px-8 py-4 rounded-full font-semibold hover:bg-brand-purple hover:text-white transition-all duration-300">
-                Schedule Consultation
-              </button>
+              </a>
+             
             </div>
           </div>
         </div>

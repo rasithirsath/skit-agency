@@ -1,5 +1,8 @@
 
 import { useState } from 'react';
+import {Facebook } from 'lucide-react';
+import emailjs from 'emailjs-com';
+
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -17,23 +20,35 @@ const Contact = () => {
   });
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Simulate form submission
+ const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
+
+  emailjs.send(
+    'service_ms345y5',        // Replace with your EmailJS service ID
+    'template_r6jes5s',       // Replace with your EmailJS template ID
+    formData,                 // This must match the template fields
+    'F2p7pAUKod433GRat'         // Replace with your EmailJS public key
+  ).then(() => {
     toast({
       title: "Message Sent!",
       description: "Thank you for contacting us. We'll get back to you within 24 hours.",
     });
-    
-    // Reset form
     setFormData({
       name: '',
       email: '',
       company: '',
       message: ''
     });
-  };
+  }).catch((error) => {
+    toast({
+      title: "Error!",
+      description: "Something went wrong. Please try again later.",
+      variant: "destructive"
+    });
+    console.error('EmailJS Error:', error);
+  });
+};
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
@@ -46,34 +61,35 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      content: "contact@socialflow.com",
+      content: "info.skitagency@gmail.com",
       subtitle: "We'll respond within 24 hours"
     },
     {
       icon: Phone,
       title: "Phone",
-      content: "+1 (555) 123-4567",
-      subtitle: "Mon-Fri, 9AM-6PM EST"
+      content: " ‪+91 78456 43661",
+      // subtitle: "Mon-Fri, 9AM-6PM EST"
     },
     {
       icon: MapPin,
       title: "Address",
-      content: "123 Business Ave, Suite 100",
-      subtitle: "New York, NY 10001"
+      content: "Vandalur Chennai, India",
+      // subtitle: "New York, NY 10001"
     },
     {
       icon: Clock,
       title: "Business Hours",
       content: "Monday - Friday",
-      subtitle: "9:00 AM - 6:00 PM EST"
+      subtitle: "9:00 AM - 6:00 PM IST"
     }
   ];
 
   const socialLinks = [
-    { icon: Instagram, href: '#', label: 'Instagram', color: 'hover:text-pink-500' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn', color: 'hover:text-blue-600' },
-    { icon: Twitter, href: '#', label: 'Twitter', color: 'hover:text-blue-400' },
-    { icon: Youtube, href: '#', label: 'YouTube', color: 'hover:text-red-500' },
+    { icon: Instagram, href: 'https://www.instagram.com/skitagency?igsh=N3l4czZ4bTdhOWhj', label: 'Instagram', color: 'hover:text-pink-500' },
+    
+    { icon: Twitter, href: 'https://x.com/Skitagencyco?t=njO5GP8GVMLqLw1bEspAhw&s=08', label: 'Twitter', color: 'hover:text-blue-400' },
+    { icon: Facebook, href: 'https://www.facebook.com/share/1CRfH65QdS/ ', label: 'Facebook' },
+
   ];
 
   return (
@@ -219,14 +235,8 @@ const Contact = () => {
 
               {/* Map Placeholder */}
               <div className="mt-12">
-                <h3 className="text-xl font-bold mb-6 text-gray-900">Our Location</h3>
-                <div className="w-full h-64 bg-gray-200 rounded-2xl flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin size={48} className="mx-auto mb-4 text-gray-400" />
-                    <p className="text-gray-600">Interactive Map</p>
-                    <p className="text-sm text-gray-500">New York, NY</p>
-                  </div>
-                </div>
+                <h3 className="text-xl font-bold mb-6 text-gray-900"></h3>
+               
               </div>
             </div>
           </div>
@@ -234,7 +244,7 @@ const Contact = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-brand-purple to-brand-blue text-white">
+      {/* <section className="py-20 bg-gradient-to-r from-brand-purple to-brand-blue text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-3xl mx-auto animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -252,7 +262,7 @@ const Contact = () => {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>
@@ -260,3 +270,4 @@ const Contact = () => {
 };
 
 export default Contact;
+// service_ms345y5
