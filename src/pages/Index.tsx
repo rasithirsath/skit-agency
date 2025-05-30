@@ -32,7 +32,7 @@ const Index = () => {
       name: "Aadil Sharaf",
       company: "Muscat Interiors",
       image: "https://i.ibb.co/gLy0FW1D/feed-1.jpg",
-      review: "SocialFlow transformed our social media presence completely. Our engagement increased by 300% in just 3 months!"
+      review: "Skit Agency transformed our social media presence completely. Our engagement increased by 300% in just 3 months!"
     },
     {
       name: "Aseem M",
