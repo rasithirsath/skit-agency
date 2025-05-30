@@ -36,13 +36,13 @@ const Index = () => {
     },
     {
       name: "Aseem M",
-      company:"Mupa Restaurants",
+      company:"Urban Stores",
       image:"https://i.ibb.co/gM7kH6Hd/feed-2.jpg",
       review: "Professional, reliable, and results-driven. The team understands our brand voice perfectly and delivers consistently."
     },
     {
       name: "Shahul Farshid",
-     
+      company:'Mupa Restaurants',
       image: "https://i.ibb.co/zhyT83Bh/feed-34.jpg",
       review: "The strategic approach and attention to detail is outstanding. Our follower growth has been phenomenal!"
     }

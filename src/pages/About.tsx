@@ -88,7 +88,7 @@ const About = () => {
                   "Every brand has a story worth telling. Our job is to help you tell it 
                   in a way that resonates, engages, and inspires action."
                 </blockquote>
-                <cite className="block mt-3 text-brand-purple font-semibold">- Mohamed Saud</cite>
+                <cite className="block mt-3 text-brand-purple font-semibold">- Saud Ismail</cite>
               </div>
             </div>
           </div>

@@ -49,7 +49,7 @@ const Footer = () => {
       info.skitagency@gmail.com
     </a>
               <p>+91 78456 43661</p>
-              <p>Vandalur Chennai, India</p>
+              <p> Chennai, India</p>
             </div>
           </div>
           

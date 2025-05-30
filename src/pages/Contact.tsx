@@ -24,10 +24,10 @@ const Contact = () => {
   e.preventDefault();
 
   emailjs.send(
-    'service_ms345y5',        // Replace with your EmailJS service ID
-    'template_r6jes5s',       // Replace with your EmailJS template ID
+    'service_qborp9f',        // Replace with your EmailJS service ID
+    'template_uncw8co',       // Replace with your EmailJS template ID
     formData,                 // This must match the template fields
-    'F2p7pAUKod433GRat'         // Replace with your EmailJS public key
+    'OS82g7QL00GXNZKFM'         // Replace with your EmailJS public key
   ).then(() => {
     toast({
       title: "Message Sent!",
@@ -73,14 +73,14 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Address",
-      content: "Vandalur Chennai, India",
+      content: "Chennai, India",
       // subtitle: "New York, NY 10001"
     },
     {
       icon: Clock,
       title: "Business Hours",
       content: "Monday - Friday",
-      subtitle: "9:00 AM - 6:00 PM IST"
+      // subtitle: "9:00 AM - 6:00 PM IST"
     }
   ];
 
